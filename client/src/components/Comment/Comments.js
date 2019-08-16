@@ -1,13 +1,14 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-// import List from "@material-ui/core/List";
-// import ListItem from "@material-ui/core/ListItem";
-// import ListItemText from "@material-ui/core/ListItemText";
-// import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-// import Avatar from "@material-ui/core/Avatar";
-// import Typography from "@material-ui/core/Typography";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+import Avatar from "@material-ui/core/Avatar";
+import Typography from "@material-ui/core/Typography";
+import distanceInWordsToNow from "date-fns/distance_in_words_to_now";
 
-const Comments = ({ classes }) => <div>Comments</div>;
+const Comments = ({ comments,classes }) => <div>Comments</div>;
 
 const styles = theme => ({
   root: {
