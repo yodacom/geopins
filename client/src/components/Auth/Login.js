@@ -21,14 +21,14 @@ const Login = ({ classes }) => {
       dispatch({ type: "LOGIN_USER", payload: me });
       dispatch({type: "IS_LOGGED_IN", payload: googleUser.isSignedIn() })
     } catch (err) {
-      onFailure(err)
+      onFailure(err);
      } 
     };
     
 
   const onFailure = err => {
     console.error("Error logging in", err);
-    dispatch({ type: "IS_LOGGED_IN", payload: false });
+    dispatch({ type: "IS_LOGGED_IN", payload: false});
   };
 
   return (
@@ -45,7 +45,7 @@ const Login = ({ classes }) => {
       </Typography>
       <GoogleLogin clientId="813361735567-c3f9k5q8tnmn8ve22sdppve2epue94qo.apps.googleusercontent.com"
         onSuccess={onSuccess}
-        onFalure={onFailure}
+        onFailure={onFailure}
         isSignedIn={true}
         buttonText="Login with Google"
         theme= "dark" 
