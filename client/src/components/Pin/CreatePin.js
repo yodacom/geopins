@@ -68,13 +68,14 @@ const CreatePin = ({ classes }) => {
         variant="h4"
         color="secondary"
       >
-        <LandscapeIcon className={classes.iconLarge} /> Pin Location
+        <LandscapeIcon className={classes.iconLarge} />
+         Equipment Location Pin
       </Typography>
       <div>
         <TextField
           name="title"
           label="Title"
-          placeholder="Insert pin title"
+          placeholder="Insert Equipment Name for Pin"
           onChange={e => setTitle(e.target.value)}
         />
         <input
